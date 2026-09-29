@@ -7,11 +7,11 @@ daten <- file_preprocess(datafile = "../Data/NOVICE_rawDataAnonymized.xlsx")
 Preprocess it further to have all formats, transformations, and summaries needed.  
 daten <- sumscore_preprocess(daten = daten)  
 Then produce the first tables of estimates meaning nearly the same   
-sumscorefit(daten = daten, svg = FALSE, covar = c("Dauer der Erkrankung (Tage)", "Alter.Patient", "BMI"))  
+sumscorefit(daten = daten, svg = FALSE, covar = c("`Dauer der Erkrankung (Tage)`", "`Alter.Patient`", "`BMI`"))  
 Produce another table of estimates   
 glmfit(datenFAS = data$FAS,  
        plot_boxcox = TRUE,  
        treat = "arm",   
        Y1 = c("`Operationszeit.E`","`OP-Zeit Proband:inE`"), # endpoints   
        Y0 = c("Operationszeit","`OP-Zeit Proband:in`"), # baselines   
-       X = c("BMI", "Alter.Patient", "Dauer der Erkrankung (Tage)")) # covariates  
+       X = c("`BMI`", "`Alter.Patient`", "`Dauer der Erkrankung (Tage)`")) # covariates  
