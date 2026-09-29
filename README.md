@@ -12,6 +12,6 @@ Produce another table of estimates
 glmfit(datenFAS = data$FAS,  
        plot_boxcox = TRUE,  
        treat = "arm",   
-       Y1 = c("`Operationszeit.E","`OP-Zeit Proband:inE`"),      # endpoints  
-       Y0 = c("Operationszeit","`OP-Zeit Proband:in`"),      # baselines  
+       Y1 = c("`Operationszeit.E`","`OP-Zeit Proband:inE`"), # endpoints   
+       Y0 = c("Operationszeit","`OP-Zeit Proband:in`"), # baselines   
        X = c("BMI", "Alter.Patient", "Dauer der Erkrankung (Tage)")) # covariates  
