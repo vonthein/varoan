@@ -8,7 +8,7 @@ Preprocess it further to have all formats, transformations, and summaries needed
 daten <- sumscore_preprocess(daten = daten)  
 Then produce the first tables of estimates meaning nearly the same   
 sumscorefit(daten = daten, svg = FALSE, covar = c("Dauer der Erkrankung (Tage)", "Alter.Patient", "BMI"))  
-Produce another table of estimates with glmfit().  
+Produce another table of estimates   
 glmfit(datenFAS = data$FAS,  
        plot_boxcox = TRUE,  
        treat = "arm",   
