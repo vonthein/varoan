@@ -1,6 +1,6 @@
-Analysis of variance  
+# Analysis of variance  
 R package by Reinhard Vonthein to produce the analyses in DOI 10.1097/JS9.0000000000002304  
-under development  
+*under development*  
 After downloading that article's data in DOI 10.5281/zenodo.10428829,  
 prepare this specific file for further processing.  
 daten <- file_preprocess(datafile = "../Data/NOVICE_rawDataAnonymized.xlsx")  
